@@ -21,3 +21,13 @@ not 사용
 
 - `box-sizing: border-box`의 필요성
 - `position: absolute`의 유용성
+
+## 3. Chat Screen
+
+- `z-index`의 유용성
+  - poistion이 `absolute`이거나 `fixed`일 때 각 layer가 쌓이는 순서를 조정
+- `order`의 사용
+  - 형식은 똑같으나 순서만 바꾸고 싶을 때, 덮어씌워서 바꾸자.
+  - 단, flexbox 자손들에게만 적용된다.
+  - 이 때 같은 block 내에 모든 클래스에 `order`를 적용해줘야한다.
+- 위 `order`의 대체품으로 `flex-direction: row-reverse`가 있다!! (부모에서 적용)

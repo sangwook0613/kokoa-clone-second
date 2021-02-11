@@ -7,7 +7,7 @@
     <title>Chat w/ Simon - Kokoa Clone</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
@@ -25,7 +25,7 @@
 
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html">
+        <a href="chats.html">
           <i class="fas fa-angle-left fa-2x"></i>
         </a>
       </div>
@@ -38,7 +38,29 @@
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 13, 2015</div>
+      <div class="message-row">
+        <img src="./images/future.jpg" alt="profile-image" />
+        <div class="message-row__content">
+          <span class="message__author">Simon</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi~</span>
+            <span class="message__time">06:13</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble"
+              >Hello! It's great to see you, back</span
+            >
+            <span class="message__time">06:13</span>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://kit.fontawesome.com/7cd69b2f82.js"
