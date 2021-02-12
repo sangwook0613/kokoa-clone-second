@@ -32,9 +32,18 @@ not 사용
   - 이 때 같은 block 내에 모든 클래스에 `order`를 적용해줘야한다.
 - 위 `order`의 대체품으로 `flex-direction: row-reverse`가 있다!! (부모에서 적용)
 
-## 4. Splash Screen
+## 4. Animation
 
-- 애니메이션 첫 활용
 - `animation: forward` 를 통해 가져온 애니메이션의 마지막 장면을 유지한다.
+
 - 만약 한 장면을 fade-out 하면서 완전히 살아지게 하고 싶다면, `visibility: hidden`을 이 때 사용하자!
+
   - `none`과 `hidden`의 차이는 항상 신경쓰자
+
+- 애니메이션이 다소 부자연스럽다면 `will-change`를 쓰자.
+
+  - will-change는 애니메이션이 좀 더 부드럽게 동작할 수 있게 한다. → 브라우저에게 어떤 것이 변할 것인지 예고해주는 것
+  - will-change는 그래픽 카드를 이용해서 애니메이션을 가속화 한다.
+
+- focus가 가능한 element에만 특정 animation을 적용하고 싶다면 `:focus-within`을 사용하자.
+  - 만약 `transform` 속성을 사용하고 싶다면, 부모에 `transition`이 선언되어 있는지 확인하자.
