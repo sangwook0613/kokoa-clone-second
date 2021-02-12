@@ -31,3 +31,10 @@ not 사용
   - 단, flexbox 자손들에게만 적용된다.
   - 이 때 같은 block 내에 모든 클래스에 `order`를 적용해줘야한다.
 - 위 `order`의 대체품으로 `flex-direction: row-reverse`가 있다!! (부모에서 적용)
+
+## 4. Splash Screen
+
+- 애니메이션 첫 활용
+- `animation: forward` 를 통해 가져온 애니메이션의 마지막 장면을 유지한다.
+- 만약 한 장면을 fade-out 하면서 완전히 살아지게 하고 싶다면, `visibility: hidden`을 이 때 사용하자!
+  - `none`과 `hidden`의 차이는 항상 신경쓰자
