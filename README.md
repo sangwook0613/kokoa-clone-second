@@ -45,5 +45,5 @@ not 사용
   - will-change는 애니메이션이 좀 더 부드럽게 동작할 수 있게 한다. → 브라우저에게 어떤 것이 변할 것인지 예고해주는 것
   - will-change는 그래픽 카드를 이용해서 애니메이션을 가속화 한다.
 
-- focus가 가능한 element에만 특정 animation을 적용하고 싶다면 `:focus-within`을 사용하자.
+- focus가 가능한 element에만 특정 animation을 적용하고 싶다면 state 선택자 `focus-within`을 사용하자.
   - 만약 `transform` 속성을 사용하고 싶다면, 부모에 `transition`이 선언되어 있는지 확인하자.
